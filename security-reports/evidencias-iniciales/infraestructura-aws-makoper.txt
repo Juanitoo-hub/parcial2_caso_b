@@ -1,0 +1,25 @@
+﻿# Infraestructura AWS - Makoper PixelForge
+
+## Instancias Lightsail
+
+### sg-frontend
+- IP publica: 35.170.121.60
+- IP privada: 172.26.14.134
+- Rol: Nginx, HTTPS, portal, juego, reverse proxy y WireGuard Server
+
+### sg-backend
+- IP publica: 35.173.115.185
+- IP privada: 172.26.3.249
+- Rol: Backend FastAPI
+
+### sg-db
+- IP publica: 3.212.246.18
+- IP privada: 172.26.14.7
+- Rol: PostgreSQL
+
+## Dominio
+- Dominio: makoper.si-umng.com
+- Debe apuntar a: 35.170.121.60
+
+## Llave SSH
+- harold.pem
