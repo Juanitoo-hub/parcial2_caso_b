@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from src.payments.router import router as payments_router
 from src.admin.router import router as admin_router
 from src.auth.router import router as auth_router
+from src.reports.router import router as reports_router
 from src.game.router import router as game_router
 from src.leaderboard.router import router as lb_router
 from src.settings import settings
@@ -29,6 +30,7 @@ app.include_router(game_router, prefix="/api/game", tags=["game"])
 app.include_router(lb_router, prefix="/api", tags=["leaderboard"])
 app.include_router(admin_router, prefix="/api/admin", tags=["admin"])
 app.include_router(payments_router, prefix="/api/payments", tags=["payments"])
+app.include_router(reports_router, prefix="/api/reports", tags=["reports"])
 
 
 @app.get("/health")
