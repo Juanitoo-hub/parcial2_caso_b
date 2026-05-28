@@ -3,7 +3,7 @@ uvicorn[standard]
 python-dotenv
 psycopg2-binary
 passlib[bcrypt]
-bcrypt
+bcrypt==4.0.1
 python-jose[cryptography]
 pydantic
 pydantic-settings
