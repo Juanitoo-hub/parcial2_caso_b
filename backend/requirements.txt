@@ -3,6 +3,7 @@ uvicorn[standard]
 python-dotenv
 psycopg2-binary
 passlib[bcrypt]
+bcrypt
 python-jose[cryptography]
 pydantic
 pydantic-settings
@@ -11,3 +12,4 @@ pyotp
 qrcode[pil]
 reportlab
 slowapi
+email-validator
